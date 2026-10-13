@@ -403,11 +403,11 @@ h3 {
   mask-image: linear-gradient(to bottom, #000 62%, transparent 100%);
 }
 
-/* Screenshot frame */
+/* Screenshot frame: a ring in the site's gradient, so light screenshots stand off the dark page */
 .shot {
   overflow: hidden;
-  background: #fff;
-  border: 1px solid rgb(255 255 255 / 16%);
+  padding: 3px;
+  background: var(--grad);
   border-radius: var(--radius);
   box-shadow:
     0 0 0 1px rgb(0 0 0 / 40%),
@@ -423,6 +423,12 @@ h3 {
   padding-inline: 16px;
   background: #0d1428;
   border-bottom: 1px solid rgb(255 255 255 / 8%);
+  border-radius: calc(var(--radius) - 3px) calc(var(--radius) - 3px) 0 0;
+}
+
+.shot img {
+  display: block;
+  border-radius: 0 0 calc(var(--radius) - 3px) calc(var(--radius) - 3px);
 }
 
 .shot-bar i {
