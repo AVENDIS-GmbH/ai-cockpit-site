@@ -130,7 +130,7 @@
             <h2>An overview for everyone, settings for the owner.</h2>
             <p>Each process has a page that says what it does, which rulesets it checks against, which model it uses and what it consumed. Process owners change name, rulesets and model in the settings.</p>
             <ul class="checks">
-              <li>Processes appear in the navigation by themselves, each with its cases, overview and settings</li>
+              <li>Each process is a filter of the cases in the navigation; setting it up has its own area for key users</li>
               <li>Each role sees the processes of its areas</li>
               <li>Token use of the last 30 days and in total</li>
             </ul>
@@ -160,6 +160,47 @@
           <div class="shot">
             <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Modell</span></div>
             <img src="assets/img/model.png" width="1440" height="900" loading="lazy" alt="Model settings of a process with the chosen model, selectable models and validations" />
+          </div>
+        </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap split">
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2>The prompts people keep, in one place and with a history.</h2>
+            <p>A skill is what an AI tool loads when a task calls for it: a description of when to use it, the instructions, and further files. Everyone can read a skill, copy it or download its SKILL.md. Whoever maintains skills writes them as one text in an editor; two bars inside the text mark where the description and the instructions begin and are dragged to move the boundary.</p>
+            <ul class="checks">
+              <li>Import a Markdown file — the bars start at a first guess</li>
+              <li>Every change is a version: the author says why, the model writes what changed</li>
+              <li>Step through older versions; leaving with unsaved changes asks first</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Skills</span></div>
+            <img src="assets/img/skill-editor.png" width="1440" height="900" loading="lazy" alt="The editor of a skill: one text with a bar for the description and a bar for the instructions, each part in its own colour" />
+          </div>
+        </figure>
+        </div>
+      </section>
+      <section class="section white">
+        <div class="wrap split reverse">
+          <div>
+            <p class="eyebrow">Chat</p>
+            <h2>Ask the rulesets instead of searching them.</h2>
+            <p>Choose which rulesets to ask and put a question. The answer comes from their entries and names them; each one is a link. The chat is a way to look things up, not a general assistant: it answers only from the chosen knowledge.</p>
+            <ul class="checks">
+              <li>The conversation is not stored — it lives in the tab and ends with it</li>
+              <li>On record is the use: who, when, which model, how many tokens</li>
+              <li>Runs on a fast model without reasoning: answers in a few seconds</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Chat</span></div>
+            <img src="assets/img/chat.png" width="1440" height="900" loading="lazy" alt="The chat: two rulesets chosen, a question about liability and an answer with the entry it rests on as a source" />
           </div>
         </figure>
         </div>
