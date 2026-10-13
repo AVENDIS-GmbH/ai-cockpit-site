@@ -138,6 +138,16 @@ a:hover {
   text-decoration: none;
 }
 
+.nav a.nav-cta {
+  margin-left: 8px;
+  color: #fff;
+  background: var(--primary);
+}
+
+.nav a.nav-cta:hover {
+  background: var(--primary-strong);
+}
+
 .nav-toggle {
   display: none;
   margin-left: auto;
@@ -342,6 +352,34 @@ figcaption {
   margin-top: 14px;
   font-size: 14px;
   color: var(--muted);
+}
+
+/* Running text (privacy) */
+.prose {
+  max-width: 760px;
+}
+
+.prose h2 {
+  margin-top: 48px;
+  font-size: 1.5rem;
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose p,
+.prose ul {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.prose ul {
+  padding-left: 22px;
+}
+
+.prose li + li {
+  margin-top: 6px;
 }
 
 /* Sections */
@@ -778,6 +816,11 @@ figcaption {
 
   .nav.open {
     display: flex;
+  }
+
+  .nav a.nav-cta {
+    margin: 8px 0 0;
+    text-align: center;
   }
 
   .nav-toggle {
