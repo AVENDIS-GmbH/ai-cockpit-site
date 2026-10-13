@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Features — ai-cockpit</title>
+    <meta name="description" content="What ai-cockpit does today: one board for all processes, structured review results, versioned rulesets, audit trail, model control and on-premises operation." />
+    <meta property="og:title" content="Features — ai-cockpit" />
+    <meta property="og:description" content="What ai-cockpit does today: one board for all processes, structured review results, versioned rulesets, audit trail, model control and on-premises operation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/board.png" />
+    <meta name="theme-color" content="#0d1529" />
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html"><img src="assets/logo.png" width="30" height="30" alt="" />ai-cockpit</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav class="nav" id="nav" aria-label="Main">
+          <a href="index.html">Overview</a>
+          <a href="platform.html">Platform</a>
+          <a href="features.html" aria-current="page">Features</a>
+          <a href="use-cases.html">Use cases</a>
+          <a href="roadmap.html">Roadmap</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero compact">
+        <div class="wrap">
+          <p class="eyebrow">Features</p>
+          <h1>What is in the product today.</h1>
+          <p class="lead">Every screenshot shows the running application with its demo data. The interface is German.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap split">
+          <div>
+            <p class="eyebrow">Work</p>
+            <h2>Board and list, one set of filters.</h2>
+            <p>All cases live in one place. The board shows open cases in stage columns; the list adds finished ones and a status filter. Switching the view keeps what you filtered.</p>
+            <ul class="checks">
+              <li>Drag a card, or use its menu — the keyboard path does the same</li>
+              <li>A moved card shows at once and returns if the server refuses</li>
+              <li>Filters live in the address, so a view can be passed on as a link</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Vorgänge</span></div>
+            <img src="assets/img/list.png" width="1440" height="900" loading="lazy" alt="List of all cases with number, title, process, state, round and author" />
+          </div>
+        </figure>
+        </div>
+      </section>
+
+      <section class="section white">
+        <div class="wrap split reverse">
+          <div>
+            <p class="eyebrow">Review</p>
+            <h2>A result you can check, not a text you have to trust.</h2>
+            <p>The agent returns data, the platform renders it: summary, overview of every checkpoint, clauses with verbatim evidence, wording issues. The same data becomes a Word document in your template.</p>
+            <ul class="checks">
+              <li>Rounds: a return with a comment starts the next run</li>
+              <li>Gaps of the agent are listed, not hidden</li>
+              <li>Each run shows its model, duration and token use</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Ergebnis</span></div>
+            <img src="assets/img/result.png" width="1440" height="900" loading="lazy" alt="Review result with summary, checkpoint matrix and table of contents" />
+          </div>
+        </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap split">
+          <div>
+            <p class="eyebrow">Knowledge</p>
+            <h2>Rulesets that are maintained like documents.</h2>
+            <p>Checkpoints, risk patterns and wording rules live in rulesets. Every change creates a new revision with author, time and reason; only released entries take effect.</p>
+            <ul class="checks">
+              <li>Anyone can propose a rule from a finding</li>
+              <li>Proposals are curated as cases — who proposes does not decide</li>
+              <li>Accepting a proposal creates a new ruleset version</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Regelwerk</span></div>
+            <img src="assets/img/ruleset.png" width="1440" height="900" loading="lazy" alt="A ruleset with its checkpoints, clusters and effectiveness" />
+          </div>
+        </figure>
+        </div>
+      </section>
+
+      <section class="section white">
+        <div class="wrap split reverse">
+          <div>
+            <p class="eyebrow">Governance</p>
+            <h2>An audit trail for every case.</h2>
+            <p>Which states, triggered by whom, when, with which reason. The trail is append-only: the database itself refuses to change or delete an entry.</p>
+            <ul class="checks">
+              <li>Roles per area: operate, configure, administer</li>
+              <li>Who has no role in an area sees none of its cases</li>
+              <li>Transition rules are enforced on the server</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Prüfpfad</span></div>
+            <img src="assets/img/audit.png" width="1440" height="900" loading="lazy" alt="Audit trail of a case: created, moved, agent started, agent finished" />
+          </div>
+        </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap split">
+          <div>
+            <p class="eyebrow">Processes</p>
+            <h2>An overview for everyone, settings for the owner.</h2>
+            <p>Each process has a page that says what it does, which rulesets it checks against, which model it uses and what it consumed. Process owners change name, rulesets and model in the settings.</p>
+            <ul class="checks">
+              <li>Processes appear in the navigation by themselves</li>
+              <li>Each role sees the processes of its areas</li>
+              <li>Token use of the last 30 days and in total</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Prozess</span></div>
+            <img src="assets/img/process.png" width="1440" height="900" loading="lazy" alt="Overview of a process with its details, rulesets, model and usage" />
+          </div>
+        </figure>
+        </div>
+      </section>
+
+      <section class="section white">
+        <div class="wrap split reverse">
+          <div>
+            <p class="eyebrow">Models</p>
+            <h2>The model is a choice, and the choice is visible.</h2>
+            <p>Models are managed centrally and assigned per process, with defaults from platform and area. The process records on which models it was validated; an unvalidated model stays selectable, and the note travels into the result.</p>
+            <ul class="checks">
+              <li>Where a model is operated is part of its record</li>
+              <li>Inactive models cannot be chosen</li>
+              <li>Every run stores the model it used</li>
+            </ul>
+          </div>
+          <figure>
+          <div class="shot">
+            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Modell</span></div>
+            <img src="assets/img/model.png" width="1440" height="900" loading="lazy" alt="Model settings of a process with the chosen model, selectable models and validations" />
+          </div>
+        </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Operations</p>
+            <h2>Built to be run by an operator, not by its developers.</h2>
+          </div>
+          <div class="grid three">
+            <article class="card"><h3>One Compose file</h3><p>Application, database and agent runtime. A few environment variables, then start.</p></article>
+            <article class="card"><h3>Health endpoint</h3><p>Reports database, agent runtime, document conversion and model gateway — so troubleshooting is not guessing.</p></article>
+            <article class="card"><h3>Migrations at start</h3><p>The image starts against an empty or an existing database. A second start overwrites nothing.</p></article>
+            <article class="card"><h3>No secrets in the image</h3><p>Credentials, endpoints and keys come from the environment only.</p></article>
+            <article class="card"><h3>Versioned releases</h3><p>The release pipeline tags images by version, never as a rolling “latest” — so you know what runs and can go back.</p></article>
+            <article class="card"><h3>No cloud dependency</h3><p>Nothing in the core needs an external service. Models run locally or in a region you choose.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap">
+          <div>
+            <h2>One pattern, many processes.</h2>
+            <p>Contract review is the first. The same pattern fits other document checks.</p>
+          </div>
+          <a class="button primary" href="use-cases.html">See the use cases</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>© 2026 AVENDIS GmbH. ai-cockpit is under development and not released for production use.</span>
+        <nav aria-label="Footer">
+          <a href="platform.html">Platform</a>
+          <a href="features.html">Features</a>
+          <a href="use-cases.html">Use cases</a>
+          <a href="roadmap.html">Roadmap</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>
