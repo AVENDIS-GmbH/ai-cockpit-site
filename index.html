@@ -31,9 +31,10 @@
     </header>
     <main id="main">
       <section class="hero">
+        <div class="grid-lines" aria-hidden="true"></div>
         <div class="wrap">
           <p class="eyebrow">AI-native process platform</p>
-          <h1>AI-assisted processes that stand up to an audit.</h1>
+          <h1>AI-assisted processes that <span class="grad">stand up to an audit.</span></h1>
           <p class="lead">
             ai-cockpit lets business units hand recurring, knowledge-based work to AI agents —
             configured instead of programmed. A person decides at defined points, and every decision
@@ -43,7 +44,11 @@
             <a class="button primary" href="platform.html">See how it works</a>
             <a class="button ghost" href="features.html">Explore the features</a>
           </div>
-          <p class="hero-note">Model-agnostic · Runs entirely in your own data centre · In active development</p>
+          <ul class="hero-note">
+            <li>Model-agnostic</li>
+            <li>Runs entirely in your own data centre</li>
+            <li>In active development</li>
+          </ul>
           <div class="hero-shot">
             <div class="shot">
               <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Vorgänge</span></div>
@@ -53,35 +58,58 @@
         </div>
       </section>
 
-      <section class="section">
+      <div class="marquee" aria-hidden="true">
+        <ul>
+          <li>Human approval</li><li>Audit trail</li><li>Versioned rulesets</li><li>On-premises</li><li>Model-agnostic</li><li>Reconstructable results</li><li>Configured, not programmed</li>
+          <li>Human approval</li><li>Audit trail</li><li>Versioned rulesets</li><li>On-premises</li><li>Model-agnostic</li><li>Reconstructable results</li><li>Configured, not programmed</li>
+        </ul>
+      </div>
+
+      <section class="section spot">
         <div class="wrap">
           <div class="section-head">
             <p class="eyebrow">Why ai-cockpit</p>
-            <h2>Not “build an agent”. Run a process someone can answer for.</h2>
+            <h2>Not “build an agent”. <span class="grad">Run a process someone can answer for.</span></h2>
             <p>
               Four properties make the difference together. None of them is unique alone.
             </p>
           </div>
-          <div class="grid four">
+          <div class="bento">
             <article class="card">
-              <span class="num">1</span>
+              <span class="index">01</span>
               <h3>Decisions carry a reason</h3>
               <p>Approval, return and withdrawal need a written reason. Each one is logged with who decided and when.</p>
+              <div class="visual" aria-hidden="true">
+                <div class="quote">„Geprüft, keine Einwände.“<small>A reason, stored with author and time</small></div>
+              </div>
             </article>
             <article class="card">
-              <span class="num">2</span>
+              <span class="index">02</span>
               <h3>Knowledge is versioned</h3>
               <p>The rules an agent checks against are maintained, versioned and released — not buried in a prompt.</p>
+              <div class="visual" aria-hidden="true">
+                <span class="chip">Version 1</span><span class="chip arrow">→</span><span class="chip on">Version 2</span>
+              </div>
             </article>
             <article class="card">
-              <span class="num">3</span>
+              <span class="index">03</span>
               <h3>Results can be reconstructed</h3>
-              <p>Every run records its inputs, its model and the ruleset version it used — even after both have changed.</p>
+              <p>Every run records its inputs, its model and the ruleset version it used.</p>
+              <div class="visual" aria-hidden="true">
+                <dl class="kv">
+                  <div><dt>Model</dt><dd>DeepSeek V4.1 Flash</dd></div>
+                  <div><dt>Ruleset</dt><dd>contracts · v1</dd></div>
+                  <div><dt>Run</dt><dd>Round 1</dd></div>
+                </dl>
+              </div>
             </article>
             <article class="card">
-              <span class="num">4</span>
+              <span class="index">04</span>
               <h3>It runs in your house</h3>
               <p>On-premises by design. The model sits behind a gateway, can be exchanged, and is labelled in every result.</p>
+              <div class="visual" aria-hidden="true">
+                <div class="nodes"><span>Application</span><span>Database</span><span>Agent runtime</span><span class="out">Model gateway</span><span class="out">Document conversion</span></div>
+              </div>
             </article>
           </div>
         </div>
@@ -91,7 +119,7 @@
         <div class="wrap">
           <div class="section-head">
             <p class="eyebrow">How it works</p>
-            <h2>The agent does the work. A person takes the decision.</h2>
+            <h2>The agent does the work. <span class="grad">A person takes the decision.</span></h2>
           </div>
           <div class="grid three steps">
             <article class="card">
