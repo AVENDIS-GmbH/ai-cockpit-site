@@ -1310,3 +1310,8 @@ figcaption {
     transition: none;
   }
 }
+
+/* Two grids in one section stand apart. */
+.grid + .grid {
+  margin-top: 1rem;
+}

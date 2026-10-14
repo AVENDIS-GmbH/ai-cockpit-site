@@ -1,31 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Features — ai-cockpit</title>
-    <meta name="description" content="What ai-cockpit does today: one board for all processes, structured review results, versioned rulesets, audit trail, model control and on-premises operation." />
-    <meta property="og:title" content="Features — ai-cockpit" />
-    <meta property="og:description" content="What ai-cockpit does today: one board for all processes, structured review results, versioned rulesets, audit trail, model control and on-premises operation." />
+    <title>Funktionen — ai-cockpit</title>
+    <meta name="description" content="Was heute in ai-cockpit steckt: Board, Prüfergebnis, Regelwerke, Prozesse und Modelle, Skills und Chat, Verwaltung." />
+    <meta property="og:title" content="Funktionen — ai-cockpit" />
+    <meta property="og:description" content="Was heute in ai-cockpit steckt: Board, Prüfergebnis, Regelwerke, Prozesse und Modelle, Skills und Chat, Verwaltung." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/board.png" />
+    <meta property="og:image" content="assets/img/result.png" />
     <meta name="theme-color" content="#0d1529" />
     <link rel="icon" href="assets/logo.png" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main">Zum Inhalt</a>
     <header class="site-header">
       <div class="wrap">
         <a class="brand" href="index.html"><img src="assets/logo.png" width="30" height="30" alt="" />ai-cockpit</a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
-        <nav class="nav" id="nav" aria-label="Main">
-          <a href="index.html">Overview</a>
-          <a href="platform.html">Platform</a>
-          <a href="features.html" aria-current="page">Features</a>
-          <a href="use-cases.html">Use cases</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menü</button>
+        <nav class="nav" id="nav" aria-label="Hauptnavigation">
+          <a href="index.html">Überblick</a>
+          <a href="features.html" aria-current="page">Funktionen</a>
           <a href="roadmap.html">Roadmap</a>
-          <a class="nav-cta" href="https://avendis.com/kontakt/" rel="noopener">Contact</a>
+          <a class="nav-cta" href="https://avendis.com/kontakt/" rel="noopener">Kontakt</a>
         </nav>
       </div>
     </header>
@@ -33,192 +31,148 @@
       <section class="hero compact">
         <div class="grid-lines" aria-hidden="true"></div>
         <div class="wrap">
-          <p class="eyebrow">Features</p>
-          <h1>What is in the product <span class="grad">today.</span></h1>
-          <p class="lead">Every screenshot shows the running application with its demo data. The interface is German.</p>
+          <p class="eyebrow">Funktionen</p>
+          <h1>Was heute <span class="grad">im Produkt steckt.</span></h1>
+          <p class="lead">Bildschirmfotos der laufenden Anwendung mit ihren Demodaten.</p>
         </div>
       </section>
 
       <section class="section">
         <div class="wrap split">
           <div>
-            <p class="eyebrow">Work</p>
-            <h2>Board and list, one set of filters.</h2>
-            <p>All cases live in one place. The board shows open cases in stage columns; the list adds finished ones and a status filter. Switching the view keeps what you filtered.</p>
+            <p class="eyebrow">Tagesgeschäft</p>
+            <h2>Alle Vorgänge auf einem Board.</h2>
+            <p>Das Board zeigt die offenen Vorgänge aller Prozesse nach Stand, die Liste auch die erledigten. Was auf Sie wartet, steht auf der Startseite.</p>
             <ul class="checks">
-              <li>Drag a card, or use its menu — the keyboard path does the same</li>
-              <li>A moved card shows at once and returns if the server refuses</li>
-              <li>Filters live in the address, so a view can be passed on as a link</li>
+              <li>Erst die eigenen Vorgänge, alle mit einem Klick</li>
+              <li>Eine Karte in den nächsten Stand ziehen — braucht der Schritt eine Begründung, wird sie erfragt</li>
+              <li>Filter stehen in der Adresse und lassen sich weitergeben</li>
             </ul>
           </div>
           <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Vorgänge</span></div>
-            <img src="assets/img/list.png" width="1440" height="900" loading="lazy" alt="List of all cases with number, title, process, state, round and author" />
-          </div>
-        </figure>
+            <div class="shot">
+              <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Vorgänge</span></div>
+              <img src="assets/img/board.png" width="1440" height="900" loading="lazy" alt="Das Board: offene Vorgänge aller Prozesse in den Spalten Neu, Beim Agenten, Zur Prüfung und Freigegeben" />
+            </div>
+          </figure>
         </div>
       </section>
 
       <section class="section white">
         <div class="wrap split reverse">
           <div>
-            <p class="eyebrow">Review</p>
-            <h2>A result you can check, not a text you have to trust.</h2>
-            <p>The agent returns data, the platform renders it as a decision aid: first the result and what to do, grouped by action; the evidence quoted from the document, every checkpoint by cluster and wording issues fold open when you need them. The same data becomes a Word document in your template.</p>
+            <p class="eyebrow">Prüfung</p>
+            <h2>Ein Ergebnis zum Prüfen, kein Text zum Glauben.</h2>
+            <p>Zuerst das Ergebnis und was zu tun ist, nach Aktion gruppiert; die Belege stehen wörtlich aus dem Dokument. Dieselben Daten werden zum Word-Bericht in Ihrer Vorlage.</p>
             <ul class="checks">
-              <li>Rounds: a return with a comment starts the next run</li>
-              <li>Gaps of the agent are listed, not hidden</li>
-              <li>Each run shows its model, duration and token use</li>
+              <li>Mit Hinweis zurückgeben — die nächste Runde berücksichtigt ihn</li>
+              <li>Lücken des Agenten werden genannt, nicht versteckt</li>
+              <li>Jeder Lauf zeigt Modell, Dauer und Tokens</li>
             </ul>
           </div>
           <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Ergebnis</span></div>
-            <img src="assets/img/result.png" width="1440" height="900" loading="lazy" alt="Review result: the ratings of all checkpoints at a glance, the next step with its decision, report sections that fold open" />
-          </div>
-        </figure>
+            <div class="shot">
+              <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Ergebnis</span></div>
+              <img src="assets/img/result.png" width="1440" height="900" loading="lazy" alt="Prüfergebnis: die Bewertungen aller Prüfpunkte auf einen Blick und der nächste Schritt" />
+            </div>
+          </figure>
         </div>
       </section>
 
       <section class="section">
         <div class="wrap split">
           <div>
-            <p class="eyebrow">Knowledge</p>
-            <h2>Rulesets that are maintained like documents.</h2>
-            <p>Checkpoints, risk patterns and wording rules live in rulesets. Every change creates a new revision with author, time and reason; only released entries take effect.</p>
+            <p class="eyebrow">Wissen</p>
+            <h2>Regelwerke, gepflegt wie Dokumente.</h2>
+            <p>Prüfpunkte, Risikomuster und Wortlaut-Regeln sind versioniert; es wirkt nur, was freigegeben ist. Was Prüfende lernen, fließt als Vorschlag zurück.</p>
             <ul class="checks">
-              <li>Anyone can propose a rule from a finding</li>
-              <li>Proposals are curated as cases — who proposes does not decide</li>
-              <li>Accepting a proposal creates a new ruleset version</li>
+              <li>Eine Regel direkt aus einem Befund vorschlagen</li>
+              <li>Vorschläge werden als Vorgang kuratiert — wer vorschlägt, entscheidet nicht</li>
+              <li>Regelwerke und Skills per Drag & Drop ordnen und gruppieren</li>
             </ul>
           </div>
           <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Regelwerk</span></div>
-            <img src="assets/img/ruleset.png" width="1440" height="900" loading="lazy" alt="A ruleset with its checkpoints grouped by cluster, one cluster open" />
-          </div>
-        </figure>
+            <div class="shot">
+              <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Regelwerk</span></div>
+              <img src="assets/img/ruleset.png" width="1440" height="900" loading="lazy" alt="Ein Regelwerk mit seinen Prüfpunkten nach Cluster, ein Cluster aufgeklappt" />
+            </div>
+          </figure>
         </div>
       </section>
 
       <section class="section white">
         <div class="wrap split reverse">
           <div>
-            <p class="eyebrow">Governance</p>
-            <h2>An audit trail for every case.</h2>
-            <p>Which states, triggered by whom, when, with which reason. The trail is append-only: the database itself refuses to change or delete an entry.</p>
+            <p class="eyebrow">Prozesse und Modelle</p>
+            <h2>Eine Seite je Prozess. Das Modell ist eine sichtbare Wahl.</h2>
+            <p>Ein Prozess zeigt, was er leistet, wer verantwortet, seine Regelwerke, sein Modell und seinen Verbrauch — direkt dort geändert. Provider und Modelle werden zentral verwaltet und auf derselben Seite getestet.</p>
             <ul class="checks">
-              <li>Roles per area: operate, configure, administer</li>
-              <li>Who has no role in an area sees none of its cases</li>
-              <li>Transition rules are enforced on the server</li>
+              <li>Ein Prozess hält fest, auf welchen Modellen er validiert ist</li>
+              <li>Die Auswahlwerte der Formulare stellt jedes Unternehmen selbst ein, mit Abhängigkeiten</li>
+              <li>Jeder Lauf speichert das Modell, mit dem er lief</li>
             </ul>
           </div>
           <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Verlauf</span></div>
-            <img src="assets/img/audit.png" width="1440" height="900" loading="lazy" alt="History of a case: its runs, and the audit trail as a timeline — created, moved, agent started, agent finished" />
-          </div>
-        </figure>
+            <div class="shot">
+              <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Prozess</span></div>
+              <img src="assets/img/process.png" width="1440" height="900" loading="lazy" alt="Die Seite eines Prozesses: Angaben, Regelwerke, Verbrauch, offene Vorgänge, Modell und Ablauf" />
+            </div>
+          </figure>
         </div>
       </section>
 
       <section class="section">
         <div class="wrap split">
           <div>
-            <p class="eyebrow">Processes</p>
-            <h2>One page per process — read by everyone, changed in place.</h2>
-            <p>Each process has one page: what it does, who answers for it, which rulesets it checks against, which model it uses and what it consumed. Whoever sets the process up changes all of it right there — no settings page, no dialog; unsaved changes are asked for before leaving.</p>
+            <p class="eyebrow">Skills und Chat</p>
+            <h2>Die Regelwerke fragen. Die Prompts behalten.</h2>
+            <p>Der Chat antwortet nur aus den gewählten Regelwerken und nennt die Einträge, auf die er sich stützt. Skills sind versionierte Anleitungen für KI-Werkzeuge — für alle lesbar, kopierbar, herunterladbar.</p>
             <ul class="checks">
-              <li>Each process is a filter of the cases in the navigation; setting it up has its own area for key users</li>
-              <li>Each role sees the processes of its areas</li>
-              <li>Token use of the last 30 days and in total</li>
+              <li>Der Chat wird nicht gespeichert; festgehalten wird nur, wer ihn wann wie viel genutzt hat</li>
+              <li>Jede Skill-Änderung ist eine Version: die Person sagt warum, das Modell schreibt was</li>
             </ul>
           </div>
           <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Prozess</span></div>
-            <img src="assets/img/process.png" width="1440" height="900" loading="lazy" alt="The page of a process: its facts as a form, rulesets, usage, open cases, model and flow" />
-          </div>
-        </figure>
+            <div class="shot">
+              <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Chat</span></div>
+              <img src="assets/img/chat.png" width="1440" height="900" loading="lazy" alt="Der Chat: zwei Regelwerke gewählt, eine Frage und eine Antwort mit dem Eintrag, auf den sie sich stützt" />
+            </div>
+          </figure>
         </div>
       </section>
 
       <section class="section white">
         <div class="wrap split reverse">
           <div>
-            <p class="eyebrow">Models</p>
-            <h2>The model is a choice, and the choice is visible.</h2>
-            <p>Models are managed centrally: a provider — a gateway or a cloud service — is set up with its endpoint, API key and extra headers, tested from the same page, and offers its models. Each process chooses first the provider, then the model, or leaves it to the default of area and platform. The process records on which models it was validated; an unvalidated model stays selectable, and the note travels into the result.</p>
+            <p class="eyebrow">Verwaltung</p>
+            <h2>Rollen, Wertelisten, Verbrauch — und ein Audit-Trail für jeden Vorgang.</h2>
+            <p>Benutzer, Bereiche und Rollen haben je eine eigene Seite. Key-User sehen, was die Plattform von ihren Modellen gebraucht hat. Jeder Statuswechsel eines Vorgangs ist festgehalten und unveränderlich.</p>
             <ul class="checks">
-              <li>Where a model is operated is part of its record</li>
-              <li>Inactive models cannot be chosen</li>
-              <li>Every run stores the model it used</li>
+              <li>Rollen je Bereich: bearbeiten, konfigurieren, verwalten</li>
+              <li>Wer in einem Bereich keine Rolle hat, sieht keinen seiner Vorgänge</li>
+              <li>Verbrauch nach Prozess, Assistent und Modell für Key-User</li>
             </ul>
           </div>
           <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Modell</span></div>
-            <img src="assets/img/model.png" width="1440" height="900" loading="lazy" alt="Choosing the model of a process: the provider, then one of its models, with the validation below" />
-          </div>
-        </figure>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrap split">
-          <div>
-            <p class="eyebrow">Skills</p>
-            <h2>The prompts people keep, in one place and with a history.</h2>
-            <p>A skill is what an AI tool loads when a task calls for it: a description of when to use it, the instructions, and further files. Everyone can read a skill, copy it or download its SKILL.md. Whoever maintains skills writes them as one text in an editor; two bars inside the text mark where the description and the instructions begin and are dragged to move the boundary.</p>
-            <ul class="checks">
-              <li>Import a Markdown file — the bars start at a first guess</li>
-              <li>Every change is a version: the author says why, the model writes what changed</li>
-              <li>Step through older versions; leaving with unsaved changes asks first</li>
-            </ul>
-          </div>
-          <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Skills</span></div>
-            <img src="assets/img/skill-editor.png" width="1440" height="900" loading="lazy" alt="The editor of a skill: one text with a bar for the description and a bar for the instructions, each part in its own colour" />
-          </div>
-        </figure>
-        </div>
-      </section>
-      <section class="section white">
-        <div class="wrap split reverse">
-          <div>
-            <p class="eyebrow">Chat</p>
-            <h2>Ask the rulesets instead of searching them.</h2>
-            <p>Choose which rulesets to ask and put a question. The answer comes from their entries and names them; each one is a link. The chat is a way to look things up, not a general assistant: it answers only from the chosen knowledge.</p>
-            <ul class="checks">
-              <li>The conversation is not stored — it lives in the tab and ends with it</li>
-              <li>On record is the use: who, when, which model, how many tokens</li>
-              <li>Runs on a fast model without reasoning: answers in a few seconds</li>
-            </ul>
-          </div>
-          <figure>
-          <div class="shot">
-            <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Chat</span></div>
-            <img src="assets/img/chat.png" width="1440" height="900" loading="lazy" alt="The chat: two rulesets chosen, a question about liability and an answer with the entry it rests on as a source" />
-          </div>
-        </figure>
+            <div class="shot">
+              <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>ai-cockpit · Verbrauch</span></div>
+              <img src="assets/img/usage.png" width="1440" height="900" loading="lazy" alt="Verbrauch: Modellaufrufe und Tokens nach Prozess, Assistent und Modell" />
+            </div>
+          </figure>
         </div>
       </section>
 
       <section class="section">
         <div class="wrap">
           <div class="section-head">
-            <p class="eyebrow">Operations</p>
-            <h2>Built to be run by an operator, not by its developers.</h2>
+            <p class="eyebrow">Betrieb</p>
+            <h2>Läuft bei Ihnen im Haus.</h2>
+            <p>Anwendung, Datenbank und Agent-Laufzeit in einer Compose-Datei. Modell-Gateway und Dokumentkonvertierung werden über ihre Adresse angebunden.</p>
           </div>
           <div class="grid three">
-            <article class="card"><h3>One Compose file</h3><p>Application, database and agent runtime. A few environment variables, then start.</p></article>
-            <article class="card"><h3>Health endpoint</h3><p>Reports database, agent runtime, document conversion and model gateway — so troubleshooting is not guessing.</p></article>
-            <article class="card"><h3>Migrations at start</h3><p>The image starts against an empty or an existing database. A second start overwrites nothing.</p></article>
-            <article class="card"><h3>No secrets in the image</h3><p>Credentials, endpoints and keys come from the environment only.</p></article>
-            <article class="card"><h3>Versioned releases</h3><p>The release pipeline tags images by version, never as a rolling “latest” — so you know what runs and can go back.</p></article>
-            <article class="card"><h3>No cloud dependency</h3><p>Nothing in the core needs an external service. Models run locally or in a region you choose.</p></article>
+            <article class="card"><h3>Keine Cloud-Abhängigkeit</h3><p>Modelle laufen lokal oder in einer Region Ihrer Wahl; der Kern braucht keinen externen Dienst.</p></article>
+            <article class="card"><h3>Zustand auf einen Blick</h3><p>Ein Endpunkt meldet Datenbank, Agent-Laufzeit, Dokumentkonvertierung und Modell-Gateway.</p></article>
+            <article class="card"><h3>Versionierte Releases</h3><p>Migrationen laufen beim Start; Images tragen ihre Version — Sie wissen, was läuft, und können zurück.</p></article>
           </div>
         </div>
       </section>
@@ -226,20 +180,20 @@
       <section class="band">
         <div class="wrap">
           <div>
-            <h2>One pattern, many processes.</h2>
-            <p>Contract review is the first. The same pattern fits other document checks.</p>
+            <h2>Wohin die Plattform geht.</h2>
+            <p>Ein Prozess läuft durchgängig. Weitere Prozesse und Selbstbedienung folgen in Stufen.</p>
           </div>
-          <a class="button primary" href="use-cases.html">See the use cases</a>
+          <a class="button primary" href="roadmap.html">Zur Roadmap</a>
         </div>
       </section>
     </main>
     <footer class="site-footer">
       <div class="wrap">
-        <span>© 2026 AVENDIS GmbH. ai-cockpit is under development and not released for production use.</span>
-        <nav aria-label="Footer">
-          <a href="https://avendis.com/kontakt/" rel="noopener">Contact</a>
-          <a href="https://avendis.com/impressum/" rel="noopener">Legal notice</a>
-          <a href="privacy.html">Privacy</a>
+        <span>© 2026 AVENDIS GmbH. ai-cockpit ist in Entwicklung und nicht für den Produktiveinsatz freigegeben.</span>
+        <nav aria-label="Fußzeile">
+          <a href="https://avendis.com/kontakt/" rel="noopener">Kontakt</a>
+          <a href="https://avendis.com/impressum/" rel="noopener">Impressum</a>
+          <a href="privacy.html">Datenschutz</a>
         </nav>
       </div>
     </footer>
